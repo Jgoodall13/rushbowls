@@ -1,0 +1,105 @@
+<style>
+    #footer_wrapper {
+        display: none;
+    }
+
+    .line-break {
+        width: 100%;
+        border: 1px solid white;
+        background: white;
+    }
+
+    .rush-footer-row {
+        background-color: #646464;
+    }
+
+    .white {
+        color: white;
+    }
+
+    .logo-div{
+        text-align: center;
+    }
+
+    #love-logo{
+        width: 280px;
+        margin: 35px;
+    }
+
+    .socials{
+        color: #646464;
+        font-size: 30px;
+    }
+
+    .fa-twitter:before {
+        background: white;
+        padding: 4px;
+        border-radius: 10px;
+    }
+    .fa-facebook:before {
+        background: white;
+        padding: 4px 9px;
+        border-radius: 10px;
+    }
+    .fa-linkedin:before{
+        background: white;
+        padding: 4px 6px;
+        border-radius: 10px;
+    }
+</style>
+
+<div class="container">
+    <div class="row rush-footer-row">
+        <div class="col-md-5 col-md-offset-1">
+            <a href="">
+                <h4 class="white">Overture Privacy Policy</h4>
+            </a>
+        </div>
+        <div class="col-md-5">
+            <a href="">
+                <h4 class="white">Contact</h4>
+            </a>
+        </div>
+    </div>
+    <div class="row rush-footer-row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="line-break"></div>
+        </div>
+    </div>
+    <div class="row rush-footer-row">
+        <div class="col-md-5 col-md-offset-1">
+            <h4 class="white">Social</h4>
+        </div>
+        <div class="col-md-5">
+            <h4 class="white">Support</h4>
+        </div>
+    </div>
+    <div class="row rush-footer-row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="line-break"></div>
+        </div>
+    </div>
+    <div class="row rush-footer-row">
+        <div class="col-md-5 col-md-offset-1">
+           <a class="socials" href=""><i class="fa fa-twitter"></i></a> 
+           <a class="socials" href=""><i class="fa fa-facebook"></i></a> 
+           <a class="socials" href=""><i class="fa fa-linkedin"></i></a> 
+        </div>
+        <div class="col-md-6">
+            <h4 class="white">000.000.0000</h4>
+            <h4 class="white">9am-5pm CT</h4>
+        </div>
+        <div class="col-md-12 logo-div">
+            <img id="love-logo" src="/assets/img/rushbowls/love_logo.svg" alt="">
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+    var path = window.location.pathname;
+	if(path !== '/'){
+		$('#pageBodyWrapper').css('margin-top', '115px')
+    }
+})
+</script>

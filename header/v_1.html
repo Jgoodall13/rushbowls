@@ -1,0 +1,49 @@
+<style>
+    #rush-header{
+        background-color: black;
+    }
+    #rush-logo{
+        max-height: 100px;
+        max-width: 100px;
+        margin: 15px 50px 15px 0
+    }
+    .view-cart{
+        color: white;
+        font-size: 28px;
+    }
+    .left-head{
+        text-align: right;
+    }
+    .right-head{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 130px;
+    }
+    .row.header-row {
+        position: fixed;
+        width: 1170px;
+        background: black;
+        z-index: 5;
+    }
+    @media (max-width: 1199px){
+        .row.header-row{
+            width: 970px;
+        }
+    }
+</style>
+
+
+
+<div id="rush-header" class="container">
+    <div class="row header-row">
+        <div class="col-md-7 left-head">
+            <a href="/"><img id="rush-logo" src="/assets/img/rushbowls/RushBowlsLogo.svg" alt=""></a>
+        </div>
+        <div class="col-md-5 right-head">
+            <a class="view-cart" href="/viewCart.jhtm">
+                VIEW CART <i style="font-size: 36px" class="fa fa-shopping-cart"></i>
+            </a>
+        </div>
+    </div>
+</div>
