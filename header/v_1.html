@@ -24,11 +24,52 @@
         position: fixed;
         width: 1170px;
         background: black;
-        z-index: 5;
+        z-index: 20;
     }
     @media (max-width: 1199px){
         .row.header-row{
             width: 970px;
+        }
+    }
+    @media (max-width: 991px){
+        .hero-image{
+            height: 247px !important;
+            background-size: cover;
+        }
+        .row.header-row{
+            width: 100%;
+        }
+        #rush-logo{
+            margin: 15px;
+        }
+        .left-head{
+            text-align: left;
+        }
+    }
+    @media (max-width: 450px){
+        #rush-logo{
+            max-width: 75px;
+            max-height: 75px;
+        }
+        .bu-bye{
+            display: none;
+        }
+        .right-head{
+            height: 105px;
+        }
+        .hero-image{
+            margin-top: 105px !important;
+            height: 150px !important;
+        }
+    }
+    @media (max-width: 380px){
+        .hero-image{
+            height: 140px !important;
+        }
+    }
+    @media (max-width: 350px){
+        .hero-image{
+            height: 120px !important;
         }
     }
 </style>
@@ -37,12 +78,12 @@
 
 <div id="rush-header" class="container">
     <div class="row header-row">
-        <div class="col-md-7 left-head">
+        <div class="col-xs-7 left-head">
             <a href="/"><img id="rush-logo" src="/assets/img/rushbowls/RushBowlsLogo.svg" alt=""></a>
         </div>
-        <div class="col-md-5 right-head">
+        <div class="col-xs-5 right-head">
             <a class="view-cart" href="/viewCart.jhtm">
-                VIEW CART <i style="font-size: 36px" class="fa fa-shopping-cart"></i>
+                <span class="bu-bye">VIEW CART</span> <i style="font-size: 36px" class="fa fa-shopping-cart"></i>
             </a>
         </div>
     </div>
