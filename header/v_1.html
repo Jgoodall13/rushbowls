@@ -22,7 +22,7 @@
     }
     .row.header-row {
         position: fixed;
-        width: 1170px;
+        width: 100%;
         background: black;
         z-index: 20;
     }
@@ -47,6 +47,11 @@
         }
     }
     @media (max-width: 450px){
+        .hero-image {
+            background-image: url('/assets/img/rushbowls/hero_mobile.jpg') !important;
+            margin-top: 105px !important;
+            height: 168px !important;
+        }
         #rush-logo{
             max-width: 75px;
             max-height: 75px;
@@ -57,26 +62,22 @@
         .right-head{
             height: 105px;
         }
-        .hero-image{
-            margin-top: 105px !important;
-            height: 150px !important;
-        }
     }
     @media (max-width: 380px){
         .hero-image{
-            height: 140px !important;
+            height: 152px !important;
         }
     }
     @media (max-width: 350px){
         .hero-image{
-            height: 120px !important;
+            height: 130px !important;
         }
     }
 </style>
 
 
 
-<div id="rush-header" class="container">
+<div id="rush-header" class="container-fluid">
     <div class="row header-row">
         <div class="col-xs-7 left-head">
             <a href="/"><img id="rush-logo" src="/assets/img/rushbowls/RushBowlsLogo.svg" alt=""></a>

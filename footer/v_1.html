@@ -84,6 +84,10 @@
         background-color: #333
     }
 
+    .cartWrapper .shoppingCart_table .shoppingCartDetails .even_row{
+        background: #e5e5e5;
+    }
+
     @media (max-width: 450px){
         #mobile-footer{
             display: block;
@@ -94,7 +98,7 @@
     }
 </style>
 
-<div id="main-footer" class="container">
+<div id="main-footer" class="container-fluid">
     <div class="row rush-footer-row">
         <div class="col-sm-5 col-sm-offset-1">
             <a href="/category/20154/privacy_policy.html">
@@ -184,5 +188,6 @@
 	if(path !== '/'){
 		$('#pageBodyWrapper').css('margin-top', '115px')
     }
+    $('#product_details_15 .details_desc .configBox_wrapper .configBox_title.has-icon .configBox_icon img').attr('src', '/assets/img/rushbowls/Step-1.png')
 })
 </script>
